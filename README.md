@@ -4,3 +4,14 @@
 4. Run LaunchMuledump.bat
 
 A command window should open and stay running in the background, and a webpage should open with your mules. 
+
+(All credit goes to snarticuno. All I did was shorten the installation process by creating the "launchMuledump.bat" and Regex.exe)
+(Here is the contents of the regex.exe. If anyone knows of a better way to pull regex replace from inside of batch please let me know :D
+	fileread,InputVar ,%1%
+	find := "Ui)([\s\S]*')(.*@.*\..*)('.*')(.*)(',\s*\}[\s\S]*$|'(,))"
+	replace := "`t{""user"":""$2"", ""password"":""$4""}$6`r`n"
+
+	OutputVar := RegExReplace(InputVar, find, replace)
+	OutputVar := "[`r`n" OutputVar "]"
+	clipboard := OutputVar
+)
