@@ -1,5 +1,6 @@
 1. Download this repository as zip, and then unzip it.
-2. Copy your "accounts.js" from the old muledump folder into this one, or modify "accounts_sample.js" and rename to "accounts.js"
+2. Copy your `accounts.js` from the old muledump folder into this one.
+   Or if you're new to Muledump, fill out  `accounts_sample.js` and rename to `accounts.js` (this will be where your account information is stored)
 3. Run LaunchMuledump.bat
 
 -----------------------------
