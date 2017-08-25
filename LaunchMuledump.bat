@@ -17,10 +17,12 @@ setlocal
 set "getclip=cscript /nologo /e:JScript "%~f0""
 %getclip% > config.json
 
-echo Executing script
-start "" http://localhost:5353/muledump.html
-muledump-2-master.exe "config.json"
 
+start "" http://localhost:5353/muledump.html
+echo Executing script
+muledump-2-master.exe "config.json"
+echo Error: Most likely cause, Error in "accounts.js" please check
+pause
 goto :EOF
 
 :: ####################################################
