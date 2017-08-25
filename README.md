@@ -4,6 +4,9 @@
 
 -----------------------------
 A command window should open and stay running in the background, and a webpage should open with your mules. 
+
+TO LAUNCH AGAIN,  run LaunchMuledump.bat again.
+-----------------------------
 Common Problems:
 Check your accounts.js and make sure its this format,
 
