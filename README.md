@@ -1,10 +1,17 @@
 1. Download this repository as zip, and then unzip it.
-2. Download and install GoLang ``` https://golang.org/dl/ ```
-3. Copy your "accounts.js" from the old muledump folder, or modify "accounts_sample.js" and rename to "accounts.js"
-4. Run LaunchMuledump.bat
+2. Copy your "accounts.js" from the old muledump folder into this one, or modify "accounts_sample.js" and rename to "accounts.js"
+3. Run LaunchMuledump.bat
 
+-----------------------------
 A command window should open and stay running in the background, and a webpage should open with your mules. 
+Common Problems:
+Check your accounts.js and make sure its this format,
 
+	accounts = {
+	'email1@test.com': 'pass1',
+	'email2@test.com': 'pass2'
+	}
+	
 ------------------------------------------------------------
 (V2 credit goes to snarticuno. All I did was shorten the installation process by creating the "launchMuledump.bat" and Regex.exe)
 (Here is the contents of the regex.exe. If anyone knows of a better way to pull regex replace from inside of batch please let me know :D
