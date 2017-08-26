@@ -19,7 +19,7 @@ set "getclip=cscript /nologo /e:JScript "%~f0""
 echo Launching Webpage
 start "" http://localhost:5353/muledump.html
 echo Launching Muledump.exe
-muledump-2-master.exe "config.json"
+muledump2.exe "config.json"
 echo Error: Most likely cause, Error in "accounts.js" please check accounts.js
 pause
 goto :EOF
